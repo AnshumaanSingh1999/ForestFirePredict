@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>ML FLASK APP</title>
+        <link rel="stylesheet" href="/static/style.css">
+    
+    </head>
+    <body>
+        <p>Enter Details:</p>
+        <form action="http://localhost:5000/report" method="post">
+            <div>
+                <label for="name">Temprature:</label>
+                <input type="integer" name="t" required="required"/>
+            </div>
+            <br>
+            
+            <div>
+                <label for="name">Humidity:</label>
+                <input type="integer" name="h" required="required"/>
+            </div>
+            <br>
+
+            <div>
+                <label for="name">Wind Speed:</label>
+                <input type="integer" name="w" required="required" />
+            </div>
+            <br>
+            <div>
+                <label for="name">Rain:</label>
+                <input type="integer" name="r" required="required" />
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+    </body>
+</html>
